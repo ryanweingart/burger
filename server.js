@@ -22,4 +22,4 @@ app.set("view engine", "handlebars");
 app.use("/", routes);
 
 app.listen(process.env.PORT || 5000)
-console.log("Listening on PORT: " + port);
+// console.log("Listening on PORT: " + port);
