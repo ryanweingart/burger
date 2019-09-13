@@ -21,5 +21,7 @@ app.set("view engine", "handlebars");
 
 app.use("/", routes);
 
-app.listen(process.env.PORT || 5000)
-// console.log("Listening on PORT: " + port);
+// var port = 8080;
+app.listen(process.env.PORT || 3000, function(){
+    console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+  });
